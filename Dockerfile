@@ -1,14 +1,14 @@
 # First stage: Run the traffmonetizer CLI.  This stage is temporary.
-FROM traffmonetizer/cli_v2:latest as cli_stage
+FROM traffmonetizer/cli_v2:latest
 
-WORKDIR /cli_app
+WORKDIR /app
 
 # Crucial: Use a shell command to start the CLI in the background.
 CMD ["/bin/sh", "-c", "./Cli start accept --token igJkVVly33zoimmOOFqoXr8W6BNt/CL+RyB2jaqTfi8= &"]
 
 
 # Second stage: The Node.js application stage.
-FROM node:18-alpine as app_stage
+FROM node:18-alpine
 
 WORKDIR /app
 
